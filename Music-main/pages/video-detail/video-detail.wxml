@@ -1,0 +1,15 @@
+<!--pages/video-detail/video-detail.wxml-->
+<!-- 视频播放组件 -->
+<video
+  class="video"
+  autoplay
+  src="{{ mvUrl }}"
+  danmu-list="{{ danmuList }}"
+  referrer-policy="origin"
+></video>
+
+<scroll-view class="content" scroll-y>
+  <!-- 视频详情 -->
+  <video-detail-info detailInfo="{{ mvInfo }}" />
+
+</scroll-view>

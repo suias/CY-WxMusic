@@ -1,0 +1,14 @@
+<!--components/area-header/area-header.wxml-->
+<view class="area-header">
+  <view class="title">{{ title }}</view>
+  <view class="right" wx:if="{{ showRight }}" bindtap="onRightClick">
+    <view class="slot">
+      <!-- 插槽 -->
+      <slot></slot>
+    </view>
+    <view class="default">
+      <text class="text">{{ rightText }}</text>
+      <van-icon name="arrow" color="#777"/>
+    </view>
+  </view>
+</view>

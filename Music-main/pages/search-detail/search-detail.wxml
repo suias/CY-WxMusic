@@ -1,0 +1,12 @@
+<!--pages/search-detail/search-detail.wxml-->
+<view class="search">搜索结果：</view>
+<view class="main">
+  <block wx:for="{{MusicList}}" wx:key="id" >
+  <view class="listbox" data-id="{{item.id}}" mut-bind:tap="onClickToMusic">
+    <image class="musicimg" src="{{item.al.picUrl}}"></image>
+    <view class="music" >歌名：{{item.name}}</view>
+    <view class="music">歌手：{{item.ar[0].name}}</view>
+    <image class="playimg" src="/assets/images/music/play_icon.png"></image>
+  </view>
+  </block>
+</view>

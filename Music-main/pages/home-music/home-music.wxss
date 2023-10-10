@@ -1,0 +1,39 @@
+/* pages/home-music/home-music.wxss */
+
+page{
+  padding:0 20rpx; 
+  box-sizing: border-box;
+  --search-padding: 10px 0;
+}
+
+/* 轮播图样式 */
+.banner{
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.banner .item{
+  border-radius: 3px;
+}
+
+.banner .item .img{
+  width: 100%;
+  border-radius: 3px;
+}
+
+/* 歌单列表样式 */
+.list{
+  display: inline-block;
+  margin-left: -20rpx;
+  white-space: nowrap;
+
+}
+.list .item{
+  /* flex-shrink: 0; */
+  width: 220rpx;
+  margin-left: 20rpx;
+}
+
+.list .item:last-of-type{
+  margin-right: 20rpx;
+}
